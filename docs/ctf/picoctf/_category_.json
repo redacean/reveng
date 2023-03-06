@@ -1,6 +1,5 @@
 {
-  "label": "CTF",
-  "position": 3,
+  "label": "picoCTF",
   "link": {
     "type": "generated-index"
   }

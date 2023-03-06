@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Reveng',
   tagline: 'Reverse Engineering and Malware Analysis',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.ico',
 
   // Set the production url of your site here
   url: 'https://redacean.github.io',
@@ -48,13 +48,6 @@ const config = {
             'https://github.com/redacean/reveng',
         },
         blog: false,
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -66,7 +59,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/reveng-social-card.webp',
       navbar: {
         title: 'Reveng',
         logo: {
@@ -80,12 +73,6 @@ const config = {
             position: 'left',
             label: 'CTF',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://youtube.com/playlist?list=PLISF42W6jzqJfiypwhA-GC9WjUAymSFFF',
-            label: 'YouTube',
-            position: 'right',
-          },
           {
             href: 'https://github.com/redacean/reveng',
             label: 'GitHub',
@@ -96,18 +83,10 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Categories',
-            items: [
               {
-                label: 'CTF',
-                to: '/docs/intro',
+                label: 'Website',
+                href: 'https://redacean.com'
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
               {
                 label: 'YouTube',
                 href: 'https://www.youtube.com/channel/UCX1ZdYGUCpZP6smtyhra6bQ',
@@ -128,15 +107,6 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/redacean',
               },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              // {
-              //   label: 'Blog',
-              //   to: '/blog',
-              // },
               {
                 label: 'Email',
                 href: 'mailto:contact@redacean.com',
@@ -150,9 +120,7 @@ const config = {
                 href: 'https://medium.com/@contact_66632',
               },
             ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Redacean, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Redacean, built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
